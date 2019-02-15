@@ -12,4 +12,4 @@ export default class Error extends Component {
   }
 }
 
-//ReactDOM.render(<Error/>, document.getElementById('app'));
+ReactDOM.render(<Error/>, document.getElementById('root'));

@@ -12,4 +12,4 @@ export default class Send extends Component {
   }
 }
 
-//ReactDOM.render(<Send/>, document.getElementById('app'));
+ReactDOM.render(<Send/>, document.getElementById('root'));

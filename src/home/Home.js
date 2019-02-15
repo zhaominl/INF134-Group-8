@@ -12,4 +12,4 @@ export default class Home extends Component {
   }
 }
 
-//ReactDOM.render(<Home/>, document.getElementById('app'));
+ReactDOM.render(<Home/>, document.getElementById('root'));

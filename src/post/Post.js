@@ -12,4 +12,4 @@ export default class Post extends Component {
   }
 }
 
-//ReactDOM.render(<Post/>, document.getElementById('app'));
+ReactDOM.render(<Post/>, document.getElementById('root'));
