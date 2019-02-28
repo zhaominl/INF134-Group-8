@@ -1,15 +1,14 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 
-export default class Post extends Component {
+export default class LetterForm extends Component {
   render() {
     return (
-      <div className="post">
+      <div className="letterform">
         { this.props.children }
-        here is post
       </div>
     )
   }
 }
 
-ReactDOM.render(<Post/>, document.getElementById('app'));
+ReactDOM.render(<LetterForm/>, document.getElementById('app'));

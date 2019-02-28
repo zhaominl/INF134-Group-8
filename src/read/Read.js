@@ -12,4 +12,4 @@ export default class Read extends Component {
   }
 }
 
-ReactDOM.render(<Read/>, document.getElementById('root'));
+ReactDOM.render(<Read/>, document.getElementById('app'));

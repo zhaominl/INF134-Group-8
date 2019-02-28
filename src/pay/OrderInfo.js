@@ -1,15 +1,14 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 
-export default class Post extends Component {
+export default class OrderInfo extends Component {
   render() {
     return (
-      <div className="post">
+      <div className="orderinfo">
         { this.props.children }
-        here is post
       </div>
     )
   }
 }
 
-ReactDOM.render(<Post/>, document.getElementById('app'));
+ReactDOM.render(<OrderInfo/>, document.getElementById('app'));
