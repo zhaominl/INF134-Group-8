@@ -22,6 +22,52 @@
   color: #61dafb;
 }
 
+.link {
+  color: black
+}
+
+.link .card:hover {
+ border: 1px solid white;
+}
+
+.link:hover {
+  color: black;
+  text-decoration: none;
+}
+
+#header {
+  margin-top: 10px;
+  height:75px;
+}
+
+#post-container {
+  margin: 5%;
+}
+
+#post-btn {
+  background-color: #C071FF;
+  border: none;
+  width: 150px;
+  height: 57px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+  font-size: 23px;
+}
+
+#post-btn:hover {
+  background-color: #B55CFB;
+}
+
+#post-btn span {
+  margin-left: 10px;
+}
+
+.radio span {
+  margin-left: 7px;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
