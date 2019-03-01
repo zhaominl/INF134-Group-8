@@ -3,12 +3,12 @@ import {BrowserRouter, Route, Switch} from "react-router-dom";
 // import logo from './logo.svg';
 import './App.css';
 
-import Home from "./home/Home";
-import Pay from "./pay/Pay";
-import Post from "./post/Post";
-import Read from "./read/Read";
-import Send from "./send/Send";
-import Error from "./error/Error";
+import Home from "./components/home/Home";
+import Pay from "./components/pay/Pay";
+import Post from "./components/post/Post";
+import Read from "./components/read/Read";
+import Send from "./components/send/Send";
+import Error from "./components/error/Error";
 
 class App extends Component {
   render() {
