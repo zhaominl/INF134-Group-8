@@ -59,7 +59,7 @@ class Send extends Component {
                         </div>
                         <div className="col-1 p-2"></div>
                         <div className="col-5 p-2">
-                            <LetterContent onChangeFrom={this.handleFrom.bind(this)} onChangeContent={this.handleContent.bind(this)} post={thisTweet}/>
+                            <LetterContent className="p-2" onChangeFrom={this.handleFrom.bind(this)} onChangeContent={this.handleContent.bind(this)} post={thisTweet}/>
                         </div>
                     </div>
                 </div>

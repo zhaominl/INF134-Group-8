@@ -24,7 +24,7 @@ class LetterContent extends Component {
         
         const { title, author, content, tags } = this.props.post;
         return (
-            <div>
+            <div className="expandField">
                 <h4>Write Your Letter</h4>
                 <span className="font-italic">Write your personalized letter for {author}</span>
 

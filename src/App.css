@@ -187,6 +187,12 @@
   width: 100%;
 }
 
-.textField{
+.expandField{
   height: 100%;
+  display: flex;
+  flex-flow: column;
+}
+
+.textField{
+  flex-grow : 1;
 }
