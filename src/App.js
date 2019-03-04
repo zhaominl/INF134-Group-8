@@ -5,12 +5,12 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faIgloo, faArrowAltCircleLeft } from '@fortawesome/free-solid-svg-icons'
 
-import View from './components/View/View'
-import Post from './components/Post/Post'
-import Send from './components/Send/Send'
-import PayPage from './components/Payment/PayPage'
-import Error from './components/Error/Error'
-import WritePage from './components/Write/WritePage'
+import View from './component/View/View'
+import Post from './component/Post/Post'
+import Send from './component/Send/Send'
+import PayPage from './component/Payment/PayPage'
+import Error from './component/Error/Error'
+import WritePage from './component/Write/WritePage'
 
 import { postList } from "./Data/FakeData";
 
