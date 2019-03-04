@@ -7,12 +7,14 @@ import { faIgloo, faArrowAltCircleLeft } from '@fortawesome/free-solid-svg-icons
 
 import View from './components/View/View'
 import Post from './components/Post/Post'
+import Send from './components/Send/Send'
+import PayPage from './components/Payment/PayPage'
 import Error from './components/Error/Error'
 
 import { postList } from "./Data/FakeData";
 
 class App extends Component {
-
+    // ADD REAL POSTLIST HERE !!
     state = {
         postList: postList,
     };
@@ -31,7 +33,11 @@ class App extends Component {
               )} />
 
               <Route path="/post/:id" render={ props => (<Post postList={this.state.postList} {...props}/>) } />
-              <Route render={props => (<Error/>)} />
+              <Route exact path="/send/:id" render={ props => (<Send postList={this.state.postList} {...props}/>) } />
+              <Route exact path="/send/:id/pay" render={ props => (<PayPage 
+                  postList={this.state.postList}
+                  {...props}/>) } />
+              {/* <Route render={props => (<Error/>)} /> */}
             </Fragment>
           </BrowserRouter>
         );

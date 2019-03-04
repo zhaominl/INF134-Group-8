@@ -7,7 +7,7 @@ class PostCard extends Component {
 
         return (
             <div>
-                <h5>{ title }</h5>
+                <h4>{ title }</h4>
                 <span className="font-italic">by {author}</span>
 
                 <br />
