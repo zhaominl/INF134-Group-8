@@ -1,5 +1,5 @@
-import React, { Component, Fragment } from 'react';
-import {BrowserRouter, Route, Link} from "react-router-dom";
+import React, { Component } from 'react';
+import {BrowserRouter, Route, Link, Switch} from "react-router-dom";
 import './App.css';
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -10,6 +10,7 @@ import Post from './components/Post/Post'
 import Send from './components/Send/Send'
 import PayPage from './components/Payment/PayPage'
 import Error from './components/Error/Error'
+import WritePage from './components/Write/WritePage'
 
 import { postList } from "./Data/FakeData";
 
@@ -27,18 +28,19 @@ class App extends Component {
 
         return (
           <BrowserRouter>
-            <Fragment>
+            <Switch>
               <Route exact path="/" render={({ history }) => (
                   <View postList={ this.state.postList }/>
               )} />
-
-              <Route path="/post/:id" render={ props => (<Post postList={this.state.postList} {...props}/>) } />
+              <Route exact path="/write" render={ props => (<WritePage {...props}/>) } />
+              <Route exact path="/post/:id" render={ props => (<Post postList={this.state.postList} {...props}/>) } />
               <Route exact path="/send/:id" render={ props => (<Send postList={this.state.postList} {...props}/>) } />
               <Route exact path="/send/:id/pay" render={ props => (<PayPage 
                   postList={this.state.postList}
                   {...props}/>) } />
-              {/* <Route render={props => (<Error/>)} /> */}
-            </Fragment>
+  
+              <Route  exact render={props => (<Error/>)} />
+            </Switch>
           </BrowserRouter>
         );
   }
