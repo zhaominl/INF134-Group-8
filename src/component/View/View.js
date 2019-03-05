@@ -51,7 +51,7 @@ class View extends Component {
                         <div className='col-3 d-flex flex-column mt-5'>
                             <div>
                                 <Link
-                                    to='/post'
+                                    to='/write'
                                 >
                                 <button className='btn btn-primary' id="post-btn">
                                     <FontAwesomeIcon icon={faEdit} />

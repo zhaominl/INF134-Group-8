@@ -22,7 +22,7 @@ class Error extends Component {
                 </div>
                 
                 <div className="row">
-                    <div className="col-12 d-flex flex-row" id="post-container">
+                    <div className="col-12 d-flex flex-row post-container" >
                         <div className="col-1 p-2">
                             <Link
                                 to='/'
