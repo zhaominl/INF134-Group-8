@@ -6,6 +6,7 @@ import lgl from '../View/lgl.jpg'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowCircleLeft } from '@fortawesome/free-solid-svg-icons'
+import blubb from "../../blubb.png";
 
 class PayPage extends Component{
 
@@ -24,16 +25,12 @@ class PayPage extends Component{
 
         return (
             <div className="container">
-         
+
                 <div className="row">
                     <div className="col-12 d-flex justify-content-between" id="header">
-                        <div className="p-2">
-                            <img src={lgl} height="55" />
+                        <div className="p-2 ml-5">
+                            <img src={blubb} height="75" />
                         </div>
-                        <div className="d-flex h-100">
-                            <span className='p-2 justify-content-center align-self-center'>PROJECT NAME</span>
-                        </div>
-                        <div className="p-2 flex-grow-1"></div>
                     </div>
                 </div>
 

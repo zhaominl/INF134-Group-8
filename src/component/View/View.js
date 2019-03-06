@@ -9,6 +9,7 @@ import Search from './Search'
 import lgl from './lgl.jpg'
 import { addPost } from "../../Data/FakeData";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import blubb from "../../blubb.png";
 
 
 class View extends Component {
@@ -33,15 +34,18 @@ class View extends Component {
     render() {
         return (
             <div className="container">
-                <div className="row">
+                <div className="row mb-4">
                     <div className="col-12 d-flex justify-content-between" id="header">
-                        <div className="p-2">
-                            <img src={lgl} height="55" />
+                        <div className="row">
+                            <div className="col-12 d-flex justify-content-between" id="header">
+                                <div className="p-2 ml-5">
+                                    <img src={blubb} height="75" />
+                                </div>
+                            </div>
                         </div>
-                        <div className="d-flex h-100">
-                            <span className='p-2 justify-content-center align-self-center'>PROJECT NAME</span>
-                        </div>
-                        <div className="p-2 flex-grow-1">
+
+
+                        <div className="p-2 flex-grow-1 mt-4">
                             <Search filterSelection={this.state.filterSelection}/>
                         </div>
                     </div>
