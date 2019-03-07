@@ -11,13 +11,14 @@ class LetterContent extends Component {
     }
 
     updateFrom(event) {
-        this.setState({from: event.target.value})
-        this.props.onChangeFrom(this.state.from);
+        this.setState({from: event.target.value},()=>
+        this.props.onChangeFrom(this.state.from));
+        
     }
 
     updateContent(event) {
-        this.setState({content: event.target.value})
-        this.props.onChangeContent(this.state.content);
+        this.setState({content: event.target.value},()=>
+        this.props.onChangeContent(this.state.content));
     }
 
     render() {
